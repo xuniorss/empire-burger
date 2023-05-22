@@ -13,9 +13,11 @@ export const Navbar = () => {
       <header className="fixed left-0 top-0 z-10 flex h-16 w-full flex-col items-center justify-center border-b-[1px] border-b-[#3c210c0d] bg-[#3b200b0d] backdrop-blur-[5px]">
          <div className="flex w-full max-w-6xl flex-row items-center justify-between">
             <div className="mx-4 flex w-full flex-row items-center justify-between">
-               <nav className="hidden flex-row gap-10 lg:flex">
+               <nav className="flex flex-row gap-10">
                   <Logo />
-                  <Links />
+                  <div className="hidden lg:block">
+                     <Links />
+                  </div>
                </nav>
                <div className="hidden lg:block">
                   <div className="flex flex-row items-center gap-4">
