@@ -1,9 +1,9 @@
-import { Inter } from 'next/font/google'
+import { archivoBlack, lato, lilitaOne, oswald, squadaOne } from '@/fonts'
 import { ReactNode } from 'react'
+import { Navbar } from '../components/Navbar'
+import { Sidebar } from '../components/Navbar/components/Sidebar'
 
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
    title: 'Create Next App',
@@ -13,7 +13,13 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
    return (
       <html lang="pt-br">
-         <body className={inter.className}>{children}</body>
+         <body
+            className={`${lilitaOne.variable} ${archivoBlack.variable} ${oswald.variable} ${lato.variable} ${squadaOne.variable} bg-background`}
+         >
+            <Sidebar />
+            <Navbar />
+            {children}
+         </body>
       </html>
    )
 }

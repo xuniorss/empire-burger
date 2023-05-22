@@ -6,7 +6,25 @@ module.exports = {
       './src/app/**/*.{js,ts,jsx,tsx,mdx}',
    ],
    theme: {
-      extend: {},
+      extend: {
+         fontFamily: {
+            lilita: 'var(--font-lilitaone-400)',
+            archivo: 'var(--font-archivoblack-400)',
+            oswald: 'var(--font-oswald-400)',
+            lato: 'var(--font-lato-400)',
+            squada: 'var(--font-squadaone-400)',
+         },
+
+         colors: {
+            background: '#FAF3F2',
+
+            titleblack60: '#635352',
+            titleblack87: '#34201F',
+
+            btnyellow: '#F59A1B',
+            btnred: '#F43127',
+         },
+      },
    },
    plugins: [],
 }
