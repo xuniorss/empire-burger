@@ -1,7 +1,12 @@
 import { Container } from '@/components/Container'
+import { Timer } from '@/components/Timer'
+import { getOpeningHours } from '@/functions/getOpeningHours'
+import { OpeningHours } from './components/OpeningHours'
 import { SpecialCards } from './components/SpecialCard'
 
 export const SpecialOffers = () => {
+   const status = getOpeningHours()
+
    return (
       <section id="promotion" className="h-auto">
          <div className="mt-32 flex w-full flex-col items-center">
@@ -44,8 +49,16 @@ export const SpecialOffers = () => {
                      </div>
                   </div>
 
-                  <div className="mb-4 mt-16">
-                     <h2>dasdas</h2>
+                  <div className="mt-16 flex flex-col items-center gap-[30px] lg:flex-row">
+                     <OpeningHours />
+                     <div>
+                        <p className="font-lato text-lg font-normal text-title/70">
+                           Não esqueça de marcar a gente no Instagram:
+                        </p>
+                        <h1 className="font-lilita text-[1.75rem] uppercase leading-10 text-btnred">
+                           #empireburger
+                        </h1>
+                     </div>
                   </div>
                </div>
             </Container>
