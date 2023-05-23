@@ -1,12 +1,8 @@
 import { Container } from '@/components/Container'
-import { Timer } from '@/components/Timer'
-import { getOpeningHours } from '@/functions/getOpeningHours'
 import { OpeningHours } from './components/OpeningHours'
 import { SpecialCards } from './components/SpecialCard'
 
 export const SpecialOffers = () => {
-   const status = getOpeningHours()
-
    return (
       <section id="promotion" className="h-auto">
          <div className="mt-32 flex w-full flex-col items-center">
