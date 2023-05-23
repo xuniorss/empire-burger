@@ -11,7 +11,7 @@ module.exports = {
             lilita: 'var(--font-lilitaone-400)',
             archivo: 'var(--font-archivoblack-400)',
             oswald: 'var(--font-oswald-400)',
-            lato: 'var(--font-lato-400)',
+            lato: 'var(--font-lato)',
             squada: 'var(--font-squadaone-400)',
          },
 
@@ -23,6 +23,8 @@ module.exports = {
 
             btnyellow: '#F59A1B',
             btnred: '#F43127',
+
+            title: 'rgb(29, 6, 5)',
          },
       },
    },

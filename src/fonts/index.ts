@@ -21,13 +21,13 @@ export const archivoBlack = Archivo_Black({
 export const oswald = Oswald({
    subsets: ['latin'],
    weight: '400',
-   variable: '--font-oswald-400',
+   variable: '--font-oswald',
 })
 
 export const lato = Lato({
    subsets: ['latin'],
-   weight: '400',
-   variable: '--font-lato-400',
+   weight: ['400', '700', '900'],
+   variable: '--font-lato',
 })
 
 export const squadaOne = Squada_One({

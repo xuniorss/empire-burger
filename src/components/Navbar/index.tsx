@@ -15,7 +15,7 @@ export const Navbar = () => {
             <div className="mx-4 flex w-full flex-row items-center justify-between">
                <nav className="flex flex-row gap-10">
                   <Logo />
-                  <div className="hidden lg:block">
+                  <div className="hidden lg:flex">
                      <Links />
                   </div>
                </nav>
@@ -29,7 +29,7 @@ export const Navbar = () => {
                            <BsInstagram size={20} color="white" />
                         </Link>
                      </div>
-                     <div className="h-12 border border-[#B50B04] bg-yellow-500" />
+                     <div className="h-12 border border-[#B50B04]" />
                      <Button header label="Contato" icon={BsWhatsapp} />
                   </div>
                </div>

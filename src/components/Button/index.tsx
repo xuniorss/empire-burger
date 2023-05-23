@@ -17,7 +17,7 @@ export const Button = ({ header = false, label, icon: Icon }: ButtonProps) => {
             header ? 'text-titleblack87' : 'text-white'
          } font-lato ${header ? 'text-base' : 'text-2xl'} ${
             header ? 'h-9' : 'h-14'
-         } font-semibold ${
+         } font-[700] ${
             header ? 'hover:bg-btnyellow/80' : 'hover:bg-btnred/80'
          } transition-all duration-300 ease-out`}
       >
