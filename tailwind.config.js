@@ -26,6 +26,10 @@ module.exports = {
 
             title: 'rgb(29, 6, 5)',
          },
+
+         gridTemplateColumns: {
+            'special-2-column': 'minmax(0, 48.125rem) auto',
+         },
       },
    },
    plugins: [],

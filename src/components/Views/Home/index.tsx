@@ -1,16 +1,9 @@
-'use client'
-
 import { Button } from '@/components/Button'
 import { InfoBox } from '@/components/InfoBox'
-import { usePathname } from 'next/navigation'
 
 export const HomeView = () => {
-   const path = usePathname()
-
-   if (path !== '/#home' && path !== '/') return null
-
    return (
-      <section id="home" className="bg-red-700">
+      <section id="home" className="h-auto">
          <main className="relative h-[53.466rem] w-full overflow-hidden bg-[url(../assets/banner-mob.jpg)] bg-cover bg-center bg-no-repeat sm:h-full sm:max-h-[34.063rem] sm:min-h-[34.063rem] sm:bg-[url(../assets/banner-hero.png)]">
             <div className="mt-20 flex flex-col items-center">
                <div className="flex h-full w-full max-w-6xl flex-col items-start justify-center space-y-3 px-4 md:h-[25rem]">

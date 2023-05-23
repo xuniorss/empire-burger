@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 type NavLinksProps = {
@@ -9,11 +10,11 @@ type NavLinksProps = {
 }
 
 const NavLinks: Array<NavLinksProps> = [
-   { name: 'Home', href: '#home', actived: true },
-   { name: 'Promoção', href: '#promotion', actived: false },
-   { name: 'Cardápio', href: '#menu', actived: false },
-   { name: 'Comentário', href: '#comments', actived: false },
-   { name: 'Contato', href: '#contact', actived: false },
+   { name: 'Home', href: '/#home', actived: true },
+   { name: 'Promoção', href: '/#promotion', actived: false },
+   { name: 'Cardápio', href: '/#menu', actived: false },
+   { name: 'Comentário', href: '/#comments', actived: false },
+   { name: 'Contato', href: '/#contact', actived: false },
 ]
 
 interface LinksProps {
@@ -21,7 +22,7 @@ interface LinksProps {
 }
 
 export const Links = ({ isSidebar = false }: LinksProps) => {
-   const route = usePathname()
+   const path = usePathname()
 
    return (
       <ul
@@ -34,7 +35,7 @@ export const Links = ({ isSidebar = false }: LinksProps) => {
                key={link.href}
                className="cursor-pointer font-lato text-lg text-titleblack60 transition-all duration-300 ease-in-out hover:text-titleblack87"
             >
-               <a href={link.href}>{link.name}</a>
+               <Link href={link.href}>{link.name}</Link>
             </li>
          ))}
       </ul>
