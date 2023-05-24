@@ -41,8 +41,8 @@ export const Comment = ({ comment }: { comment: TestimonialsProps }) => {
             onClick={() => handleMoreDetails(comment)}
             className="cursor-pointer rounded-[10px] bg-white shadow-lg"
          >
-            <div className="p-4">
-               <p className="font-lato text-base text-titleblack60">{`"${comment.testimonial}"`}</p>
+            <div className="p-2">
+               <p className="line-clamp-4 font-lato text-base text-titleblack60">{`"${comment.testimonial}"`}</p>
                <div className="mt-3 flex flex-row gap-2">
                   <Image
                      src={comment.image}
@@ -52,7 +52,7 @@ export const Comment = ({ comment }: { comment: TestimonialsProps }) => {
                      className="aspect-square h-[3.125rem] w-[3.125rem] rounded-full object-cover"
                   />
                   <div className="flex flex-col items-start justify-start">
-                     <h3 className="font-lilita text-lg uppercase text-title/90">
+                     <h3 className="truncate font-lilita text-lg uppercase text-title/90">
                         {comment.name}
                      </h3>
                      <div className="flex flex-row items-center font-lato text-[12px] leading-tight text-title/70">

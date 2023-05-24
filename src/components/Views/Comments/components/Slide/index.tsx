@@ -41,7 +41,7 @@ export const Slide = () => {
    const { data } = useTestimonials()
 
    return (
-      <>
+      <div className="px-3 py-4">
          {!data && (
             <span className="animate-pulse font-lilita text-3xl text-title/90">
                Buscando comentários...
@@ -55,6 +55,6 @@ export const Slide = () => {
                ))}
             </Slider>
          )}
-      </>
+      </div>
    )
 }

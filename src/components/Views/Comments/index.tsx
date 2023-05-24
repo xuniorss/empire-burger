@@ -1,5 +1,4 @@
 import { Container } from '@/components/Container'
-import { BsDot } from 'react-icons/bs'
 import { Instagram } from './components/Instagram'
 import { OurRoyalty } from './components/OurRoyalty'
 import { PersonalizedService } from './components/PersonalizedService'
