@@ -25,6 +25,8 @@ module.exports = {
             btnred: '#F43127',
 
             title: 'rgb(29, 6, 5)',
+
+            bege: '#FAE4D0',
          },
 
          gridTemplateColumns: {

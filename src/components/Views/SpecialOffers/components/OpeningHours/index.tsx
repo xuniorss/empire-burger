@@ -23,7 +23,7 @@ export const OpeningHours = () => {
                Segunda-feira a sexta-feira: 17h00 - 23h00
             </h3>
             <h3 className="font-lato text-sm font-[700] text-white/90 md:text-base">
-               Sabado a Domíngo: 18h30 - 23h00
+               Sábado a Domingo: 18h30 - 23h00
             </h3>
          </div>
 
