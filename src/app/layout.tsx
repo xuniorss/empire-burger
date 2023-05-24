@@ -1,3 +1,4 @@
+import { Modal } from '@/components/Modal'
 import { archivoBlack, lato, lilitaOne, oswald, squadaOne } from '@/fonts'
 import { ReactNode } from 'react'
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
          >
             <Sidebar />
             <Navbar />
+            <Modal />
             {children}
          </body>
       </html>

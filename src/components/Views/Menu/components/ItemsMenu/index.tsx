@@ -13,7 +13,7 @@ export const ItemsMenu = () => {
          </h1>
          <div className="mt-4 flex flex-col gap-8">
             {!data && (
-               <span className="font-lilita text-3xl text-white">
+               <span className="animate-pulse font-lilita text-3xl text-white">
                   Buscando cardápio...
                </span>
             )}

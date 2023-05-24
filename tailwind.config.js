@@ -32,6 +32,16 @@ module.exports = {
          gridTemplateColumns: {
             'special-2-column': 'minmax(0, 48.125rem) auto',
          },
+
+         keyframes: {
+            marquee: {
+               '0%': { transform: 'translateX(0)' },
+               '100%': { transform: 'translateX(-100%)' },
+            },
+         },
+         animation: {
+            marquee: 'marquee 3s linear infinite running',
+         },
       },
    },
    plugins: [],

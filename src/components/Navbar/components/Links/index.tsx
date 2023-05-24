@@ -1,20 +1,16 @@
-'use client'
-
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { Link } from 'react-scroll/modules'
 
 type NavLinksProps = {
    name: string
-   href: string
-   actived: boolean
+   to: string
 }
 
 const NavLinks: Array<NavLinksProps> = [
-   { name: 'Home', href: '/#home', actived: true },
-   { name: 'Promoção', href: '/#promotion', actived: false },
-   { name: 'Cardápio', href: '/#menu', actived: false },
-   { name: 'Comentário', href: '/#comments', actived: false },
-   { name: 'Contato', href: '/#contact', actived: false },
+   { name: 'Home', to: 'home' },
+   { name: 'Promoção', to: 'promotion' },
+   { name: 'Cardápio', to: 'menu' },
+   { name: 'Comentário', to: 'comments' },
+   { name: 'Contato', to: 'contact' },
 ]
 
 interface LinksProps {
@@ -22,8 +18,6 @@ interface LinksProps {
 }
 
 export const Links = ({ isSidebar = false }: LinksProps) => {
-   const path = usePathname()
-
    return (
       <ul
          className={`flex ${
@@ -32,10 +26,19 @@ export const Links = ({ isSidebar = false }: LinksProps) => {
       >
          {NavLinks.map((link) => (
             <li
-               key={link.href}
+               key={link.to}
                className="cursor-pointer font-lato text-lg text-titleblack60 transition-all duration-300 ease-in-out hover:text-titleblack87"
             >
-               <Link href={link.href}>{link.name}</Link>
+               <Link
+                  activeStyle={{ color: '#34201F', fontWeight: 'bold' }}
+                  to={link.to}
+                  spy
+                  smooth
+                  offset={0}
+                  duration={500}
+               >
+                  {link.name}
+               </Link>
             </li>
          ))}
       </ul>

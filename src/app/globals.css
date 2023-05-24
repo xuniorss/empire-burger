@@ -13,35 +13,23 @@ body {
    text-rendering: optimizeLegibility;
 }
 
-::-webkit-scrollbar {
-   width: 8px;
-   height: 8px;
+/* Works on Firefox */
+* {
+   scrollbar-width: thin;
+   scrollbar-color: #faf3f2 #34201f;
 }
-::-webkit-scrollbar-button {
-   width: 0px;
-   height: 0px;
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+   width: 12px;
 }
-::-webkit-scrollbar-thumb {
-   background: var(--brown);
-   border: 0px none var(--brown);
-   border-radius: 50px;
+
+*::-webkit-scrollbar-track {
+   background: #34201f;
 }
-::-webkit-scrollbar-thumb:hover {
-   background: var(--brown);
-}
-::-webkit-scrollbar-thumb:active {
-   background: var(--brown);
-}
-::-webkit-scrollbar-track {
-   background: #e1e1e1;
-   border: 0px none #e1e1e1;
-}
-::-webkit-scrollbar-track:hover {
-   background: #e1e1e1;
-}
-::-webkit-scrollbar-track:active {
-   background: #e1e1e1;
-}
-::-webkit-scrollbar-corner {
-   background: transparent;
+
+*::-webkit-scrollbar-thumb {
+   background-color: #faf3f2;
+   border-radius: 20px;
+   border: 3px solid #34201f;
 }
