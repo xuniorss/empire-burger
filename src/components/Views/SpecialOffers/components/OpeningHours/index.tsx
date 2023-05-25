@@ -27,9 +27,9 @@ export const OpeningHours = () => {
             </h3>
          </div>
 
-         <div className="absolute bottom-0 right-0 hidden md:block">
-            <div className="rounded-ss-md bg-white/50 p-3">
-               <h1 className="font-lilita text-lg text-title">{`${status} agora`}</h1>
+         <div className="absolute -left-[2.5rem] top-4 w-1/3 -rotate-45 lg:w-1/4">
+            <div className="w-full bg-background/70 text-center">
+               <small className="font-lilita text-sm uppercase text-title">{`${status}`}</small>
             </div>
          </div>
       </div>
