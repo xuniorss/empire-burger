@@ -1,19 +1,13 @@
 import { Footer } from '@/components/Footer'
 import { Modal } from '@/components/Modal'
-import {
-   archivoBlack,
-   inter,
-   lato,
-   lilitaOne,
-   oswald,
-   squadaOne,
-} from '@/fonts'
+import { archivoBlack, inter, lato, lilitaOne, oswald, squadaOne } from '@/fonts'
 import { ReactNode } from 'react'
 
 import { Navbar } from '../components/Navbar'
 import { Sidebar } from '../components/Navbar/components/Sidebar'
 
 import './globals.css'
+import 'animate.css/animate.min.css'
 
 export const metadata = {
    title: 'Empire Burger',

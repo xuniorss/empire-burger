@@ -1,22 +1,28 @@
-import { Container } from '@/components/Container'
-import Image from 'next/image'
+'use client'
 
 import cardPhone from '@/assets/card-phone.png'
-
+import { Container } from '@/components/Container'
 import { Deliveryman } from '@/components/Deliveryman'
 import { IceCream } from '@/components/IceCream'
 import { Ifood } from '@/components/Ifood'
 import { Whatsapp } from '@/components/Whatsapp'
+import Image from 'next/image'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
+
 import { CardDelivery } from './components/CardDelivery'
-import { Map } from './components/Map'
 import { MakeYourWishCard } from './components/MakeYourWishCard'
+import { Map } from './components/Map'
 
 export const Contact = () => {
    return (
       <section id="contact" className="h-auto">
          <div className="mt-[4.261rem] flex flex-col items-center">
             <Container>
-               <div className="flex flex-col gap-[2.472rem] lg:grid lg:grid-cols-2 lg:gap-[1.816rem]">
+               <AnimationOnScroll
+                  animateIn="animate__fadeInUp"
+                  animateOnce
+                  className="flex flex-col gap-[2.472rem] lg:grid lg:grid-cols-2 lg:gap-[1.816rem]"
+               >
                   <div>
                      <Image
                         src={cardPhone}
@@ -58,7 +64,7 @@ export const Contact = () => {
                         </div>
                      </div>
                   </div>
-               </div>
+               </AnimationOnScroll>
                <MakeYourWishCard />
             </Container>
             <div className="mt-16 flex w-full flex-col items-center gap-8">
