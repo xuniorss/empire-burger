@@ -37,7 +37,7 @@ Para facilitar a codificação do projeto foi usado um protótipo do figma como 
 
 -  [x] As informações do card da oferta(nome do prato e gramagem) devem estar no html, a única imagem deve ser a foto do prato com o preço.
 
--  [ ] Na seção Onde fica o nosso castelo você deverá incorporar uma localização do google maps.
+-  [x] Na seção Onde fica o nosso castelo você deverá incorporar uma localização do google maps.
 
 ### Nível Médio
 
