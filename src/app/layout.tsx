@@ -1,5 +1,13 @@
+import { Footer } from '@/components/Footer'
 import { Modal } from '@/components/Modal'
-import { archivoBlack, lato, lilitaOne, oswald, squadaOne } from '@/fonts'
+import {
+   archivoBlack,
+   inter,
+   lato,
+   lilitaOne,
+   oswald,
+   squadaOne,
+} from '@/fonts'
 import { ReactNode } from 'react'
 
 import { Navbar } from '../components/Navbar'
@@ -16,12 +24,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
    return (
       <html lang="pt-br">
          <body
-            className={`${lilitaOne.variable} ${archivoBlack.variable} ${oswald.variable} ${lato.variable} ${squadaOne.variable} bg-background`}
+            className={`${lilitaOne.variable} ${archivoBlack.variable} ${oswald.variable} ${lato.variable} ${squadaOne.variable} ${inter.variable} bg-background`}
          >
             <Sidebar />
             <Navbar />
             <Modal />
             {children}
+            <Footer />
          </body>
       </html>
    )

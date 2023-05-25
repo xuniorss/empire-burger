@@ -13,6 +13,7 @@ module.exports = {
             oswald: 'var(--font-oswald-400)',
             lato: 'var(--font-lato)',
             squada: 'var(--font-squadaone-400)',
+            inter: 'var(--font-inter)',
          },
 
          colors: {
@@ -27,6 +28,8 @@ module.exports = {
             title: 'rgb(29, 6, 5)',
 
             bege: '#FAE4D0',
+
+            darkblue: 'rgb(2, 14, 31)',
          },
 
          gridTemplateColumns: {

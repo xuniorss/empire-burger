@@ -29,7 +29,7 @@ Para facilitar a codificação do projeto foi usado um protótipo do figma como 
 
 ## 📝 Critérios de aceite
 
--  [ ] Criar as seguintes seções: Menu, Banner hero, Ofertas especiais, Onde fica o nosso castelo, Footer.
+-  [x] Criar as seguintes seções: Menu, Banner hero, Ofertas especiais, Onde fica o nosso castelo, Footer.
 
 -  [x] Ao clicar em um item do menu, o usuário deverá ser levado para a seção correspondente.
 
@@ -41,7 +41,7 @@ Para facilitar a codificação do projeto foi usado um protótipo do figma como 
 
 ### Nível Médio
 
--  [ ] Todos os requisitos do nivel fácil.
+-  [x] Todos os requisitos do nivel fácil.
 
 -  [x] Criar as seguintes seções: Cardápio, Atendimento, Nossas entregas.
 
@@ -51,7 +51,7 @@ Para facilitar a codificação do projeto foi usado um protótipo do figma como 
 
 ### Nível Difícil
 
--  [ ] Todos os requisitos do nivel fácil e médio
+-  [x] Todos os requisitos do nivel fácil e médio
 
 -  [x] Criar as seguintes seções: Nossa realeza, Publicações do instagram.
 

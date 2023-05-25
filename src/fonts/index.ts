@@ -4,6 +4,7 @@ import {
    Lilita_One,
    Oswald,
    Squada_One,
+   Inter,
 } from 'next/font/google'
 
 export const lilitaOne = Lilita_One({
@@ -34,4 +35,10 @@ export const squadaOne = Squada_One({
    subsets: ['latin'],
    weight: '400',
    variable: '--font-squadaone-400',
+})
+
+export const inter = Inter({
+   subsets: ['latin'],
+   weight: ['400', '700'],
+   variable: '--font-inter',
 })
