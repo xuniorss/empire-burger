@@ -23,6 +23,7 @@ Para facilitar a codificação do projeto foi usado um protótipo do figma como 
 -  [Axios](https://axios-http.com/ptbr/docs/intro)
 -  [SWR](https://swr.vercel.app/docs/with-nextjs)
 -  [date-fns](https://date-fns.org/)
+-  [date-fns-tz](https://github.com/marnusw/date-fns-tz#readme)
 -  [React Slick](https://react-slick.neostack.com/)
 -  [React Scroll](https://github.com/fisshy/react-scroll)
 -  [React Icons](https://react-icons.github.io/react-icons/)
